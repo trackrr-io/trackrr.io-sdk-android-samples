@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">AndroidSimpleTracker</string>
+
+    <string name="alert_ok">OK</string>
+    <string name="alert_cancel">CANCEL</string>
+    <string name="alert_yes">YES</string>
+    <string name="alert_no">NO</string>
+
+    <string name="alert_title_confirm">Confirm</string>
+    <string name="alert_title_error">Error</string>
+
+    <string name="alert_message_require_error">Required error</string>
+    <string name="alert_message_connect_fail">Failure to connect</string>
+    <string name="alert_message_publish_fail">Failure to publish</string>
+    <string name="alert_message_not_connected">Not connected</string>
+
+    <string name="label_gps_key">GpsKey:</string>
+    <string name="label_secret_key">SecretKey:</string>
+    <string name="label_imsi_api">IMSI API</string>
+    <string name="label_latitude">Latitude:</string>
+    <string name="label_longitude">Longitude:</string>
+
+    <string name="hint_gps_key">Input Gps Key</string>
+    <string name="hint_secret_key">Input AccessKey Secret</string>
+
+    <string name="connect">Connect</string>
+    <string name="connecting">Connecting</string>
+    <string name="connected">Connected</string>
+    <string name="publish">Publish</string>
+    <string name="publishing">Publishing</string>
+    <string name="published">Published</string>
+
+</resources>

@@ -1,0 +1,74 @@
+repositories {
+    jcenter()
+    mavenCentral()
+    maven {
+        url "https://repo.trackrr.io/snapshot/"
+    }
+    maven {
+        url "https://repo.trackrr.io/release/"
+    }
+    maven {
+        url "https://repo.eclipse.org/content/repositories/paho-snapshots/"
+    }
+}
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.1.+'
+        classpath 'com.jakewharton.sdkmanager:gradle-plugin:0.12.+'
+
+    }
+}
+
+apply plugin: 'com.android.application'
+
+dependencies {
+    compile 'com.android.support:multidex:1.0.0'
+}
+
+dependencies {
+    compile 'jp.co.stylez.gps:gpsplotter-sdk-android:0.0.1-SNAPSHOT'
+    compile 'com.android.support:appcompat-v7:23.2.0'
+    compile 'com.android.support:design:23.2.0'
+    compile 'commons-codec:commons-codec:1.10'
+    compile 'com.google.android.gms:play-services:8.4.0'
+    compile 'com.squareup.okhttp3:okhttp:3.3.0'
+}
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "io.trackrr.demo.androidsimpletracker"
+        minSdkVersion 17
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0.0"
+        multiDexEnabled true
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+        }
+    }
+
+    dexOptions {
+        javaMaxHeapSize "2g"
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
