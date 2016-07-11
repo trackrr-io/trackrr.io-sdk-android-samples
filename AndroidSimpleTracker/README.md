@@ -5,7 +5,7 @@ This sample demonstrates how to use Trackrr.IO SDK on Android. It supports Googl
 ## Requirements
 
 * AndroidStudio
-* Android API 14 or greater
+* Android API 17 or greater
 
 ## Steps
 
